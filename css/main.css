@@ -24,7 +24,7 @@ button {
 }
 .cards {
 	width: 80%;
-	height: 75rem;
+	min-height: 75rem;
 	display: flex;
 	flex-direction: column;
 	border-radius: 0.625rem;
@@ -100,7 +100,7 @@ button {
 	.cards {
         margin-top: 4rem;
 	flex-direction: row;
-		height: auto;
+
 	}
 	.card:nth-child(1) {
 		border-top-left-radius: 0.625rem;
