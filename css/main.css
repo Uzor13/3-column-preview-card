@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: "Big Shoulders Display", cursive;
+}
+p,
+div,
+button {
+	font-family: "Lexend Deca", sans-serif;
+}
+
+.wrapper {
+	background-color: hsl(0, 0%, 95%);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cards {
+	width: 80%;
+	height: 75rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.625rem;
+	margin-top: 1.5rem;
+}
+.card {
+	height: 400px;
+	line-height: 2rem;
+	padding: 2rem;
+}
+.card-img {
+	padding-top: 0.5rem;
+}
+.card-heading {
+	color: hsl(0, 0%, 95%);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.card-body {
+	color: hsla(0, 0%, 100%, 0.75);
+	font-size: 0.9rem;
+}
+.card:nth-child(1) {
+	background-color: hsl(31, 77%, 52%);
+	border-top-left-radius: 0.625rem;
+	border-top-right-radius: 0.625rem;
+}
+.card:nth-child(2) {
+	background-color: hsl(184, 100%, 22%);
+}
+.card:nth-child(3) {
+	background-color: hsl(179, 100%, 13%);
+	border-bottom-left-radius: 0.625rem;
+	border-bottom-right-radius: 0.625rem;
+}
+.card:nth-child(1) .button {
+	color: hsl(31, 77%, 52%);
+}
+
+.card:nth-child(2) .button {
+	color: hsl(184, 100%, 22%);
+}
+.card:nth-child(3) .button {
+	color: hsl(179, 100%, 13%);
+}
+.button {
+	padding: 0.7rem;
+	border-radius: 1.2rem;
+	border: 0;
+	outline: 0;
+	margin-top: 1.25rem;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: all 200ms ease-in;
+}
+
+.card .button:hover {
+	background-color: transparent;
+	border: 1px solid hsl(0, 0%, 95%);
+	color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1024px) {
+	
+	.cards {
+        margin-top: 4rem;
+		flex-direction: row;
+	}
+	.card:nth-child(1) {
+		border-top-left-radius: 0.625rem;
+		border-bottom-left-radius: 0.625rem;
+		border-top-right-radius: 0;
+	}
+	.card:nth-child(3) {
+		background-color: hsl(179, 100%, 13%);
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0.625rem;
+		border-top-right-radius: 0.625rem;
+	}
+}
